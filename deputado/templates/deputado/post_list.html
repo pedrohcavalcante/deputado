@@ -21,18 +21,9 @@
 		    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 {% for link in links %}
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">{{ link.link_1 }}</a>
+                        <a class="nav-link" href="{{ link.destino }}">{{ link.link_1 }}</a>
                     </li>
                 {% endfor %}
-		      <!-- <li class="nav-item active">
-		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Link 1</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Link 2</a>
-		      </li> -->
 		    </ul>
 		    <form class="form-inline my-2 my-lg-0">
 		      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
@@ -43,7 +34,6 @@
     	<div class="container">
     		<div class="row">
     				<div class="col-4 left-container">   
-                            {{ links }}
                         <table>
                             {% for post in posts %}
                             <thead><tr><th>{{  post.nome_deputado }}</th></tr></thead>
@@ -57,7 +47,8 @@
                             {% endfor %}
                         </table>
     			</div>
-  				<div class="col-8">
+  				<div class="col-8 right-container">
+                      asdasd
 				</div>
     		</div>
     	</div>
