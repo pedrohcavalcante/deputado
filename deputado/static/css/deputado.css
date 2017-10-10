@@ -1,0 +1,37 @@
+body{
+	align-content: center;
+	background-color: #514663;
+}
+.container{
+	color: red;
+}
+
+img{
+	width: 7.125em;
+	height: 7.125em;
+}
+table{
+	text-align: center;
+}
+th{
+	text-align: center;
+}
+img{
+	border-radius: 50%;
+}
+.left-container{
+	border-radius: 2px;
+	margin-top: 5%;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  	background-color: #4d5382;
+}
+.left-container:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.left-container > table{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
